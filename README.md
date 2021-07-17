@@ -1,2 +1,2 @@
-# web-page
-Prisma's web page.
+# prisma-web-page
+ Prisma System's web page.
