@@ -375,6 +375,14 @@ Check out our projects.</h3>
 
 "Statistics" -->
 
+<!-- Messenger plugin del chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin del chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
@@ -403,6 +411,25 @@ Check out our projects.</h3>
   </div></footer>
 
 <script>
+// Facebook Messenger Plooyeen
+var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "1206154359559157");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
