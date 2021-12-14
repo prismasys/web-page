@@ -24,9 +24,9 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("./img/vectorize-cover.svg");
+  background-image: url("./img/illustration1exp.png");
   min-height: 100%;
-  opacity: 0.8;
+  opacity: 1.0;
 }
 
 .w3-bar .w3-button {
@@ -162,6 +162,16 @@ font-family: 'Rubik';
   border-radius: 20px;
 }
 
+#relig {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./img/relig.jpg");
+  min-height: 100%;
+  opacity: 0.8;
+  height: 200px;
+  border-radius: 20px;
+}
+
 #separator{
 position: relative;
   opacity: 0.0;
@@ -197,7 +207,7 @@ left: 10px;
     <div class="w3-right w3-hide-small">
       <a id="header-button-1" href="#about" class="w3-bar-item w3-button"><i class="fa fa-code"></i>DEV</a>
       <a id="header-button-2" href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a id="header-button-3" href="#ml-title" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REPO</a>
+      <a id="header-button-3" href="https://github.com/prismasys/" class="w3-bar-item w3-button"><i class="fa fa-th"></i> REPO</a>
       <a id="header-button-4" href="https://www.upwork.com/freelancers/alexisprisma" class="w3-bar-item w3-button"><i class="fa fa-address-book-o"></i> UPWORK</a>
       <a id="header-button-5" href="https://prismasys.github.io/pterminal/login.html" class="w3-bar-item w3-button"><i class="fa fa-id-card-o"></i> LOGIN</a>
     </div>
@@ -213,7 +223,7 @@ left: 10px;
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">DEV</a>
-  <a href="#ml-title" onclick="w3_close()" class="w3-bar-item w3-button">REPO</a>
+  <a href="https://github.com/prismasys/" onclick="w3_close()" class="w3-bar-item w3-button">REPO</a>
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <a href="https://www.upwork.com/freelancers/alexisprisma" onclick="w3_close()" class="w3-bar-item w3-button">UPWORK</a>
   <a href="https://prismasys.github.io/pterminal/login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
@@ -222,11 +232,7 @@ left: 10px;
 <!-- Header with full-height image -->
 <header id="prisma-image" class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span id="title-div" class="w3-xxlarge w3-hide-small">Turn on the systems. Prisma is here to power up your dream.</span><br>
-    <span id="title-div" class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span id="title-div2" class="w3-large">Take out the best of the web development era. Deploy a top-notch native web app developed with a powerful Backend armed with high-efficiency Business Logics for handling data and queries, we can deploy AI models, forecast for your company, analyze data, handle big data and more. </span>
-    <p><a href="https://www.upwork.com/freelancers/alexisprisma" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Connect with us!</a></p>
-  </div>
+    </div>
 
 </header>
 
@@ -234,7 +240,7 @@ left: 10px;
 <div class="w3-container" style="padding:128px 16px" id="about">
   <h3 id="repo-title" class="w3-center">
 Check out our projects.</h3>
-  <p id="repo-subtitle" class="w3-center w3-large">Key software from our team. Just click and see.</p>
+
   <br>
   <br>
   <br>
@@ -262,42 +268,22 @@ Check out our projects.</h3>
 
       <p>Research on modeling a multi-variate approach on Earning Dynamics.</p>
     </div>
-  </div>
-</div>
+    <div class="w3-quarter w3-hover-opacity">
+      <div onclick="location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3833196&fbclid=iwar2tbivdto4hontbri5cy4qgznd3-lktkoifivfilpewbs8dvpy253ffifc';" id="relig"></div>
+      <p class="w3-large">Religious, Civil, and Economic Freedoms: What's the Chicken and What's the Egg?</p>
 
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3 id="ml-title">We know Machine Learning.</h3>
-      <p id="ml-subtitle">Check our GitHub Repo!.</p>
-      <p><a href="https://github.com/prismasys" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="./img/ml.jpg" alt="Buildings" width="700" height="394">
+      <p>This paper studies the relationship between religious liberty and economic freedom.</p>
     </div>
   </div>
 </div>
 
-<div class="w3-container w3-light-grey">
 
-  <iframe class="w3-col m6"  width="560" height="315" src="https://www.youtube.com/embed/67g3uXY95jU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <div id="youtube-text" class="w3-col m6 w3-row-padding" >
-    <div class="w3-col m6 w3-row-padding" >
-      <h3 id="ml-title">Hi, Youtube!.</h3>
-      <p id="ml-subtitle">Check our channel.</p>
-      <p><a href="https://www.youtube.com/channel/UC7pl9sxiYZmNx7R3MY9hF-g" class="w3-button w3-black"><i class="fa fa-th"> </i> Go to Youtube</a></p>
-    </div>
-    </div>
-
-
-</div>
 
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 id="team-title" class="w3-center">THE TEAM</h3>
   <p id="team-subtitle" class="w3-center w3-large">The ones who runs this company</p>
-  <div  class="w3-row-padding w3-grayscale" style="margin-top:64px">
+  <div  class="w3-row-padding" style="margin-top:64px">
     <div id="team-ghost" class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
         <img src="/w3images/team2.jpg" alt="John" style="width:100%">
@@ -315,7 +301,7 @@ Check out our projects.</h3>
         <img src="./img/team2.jpg" alt="Jane" style="width:100%">
         <div id="team-sub-subtitle" class="w3-container">
           <h3 id="team-sub-subtitle">Alexis Wong</h3>
-          <p class="w3-opacity">CEO & Founder</p>
+          <p class="w3-opacity">Software Developer</p>
           <p>The man behind the machine.</p>
           <p><button onclick="location.href='https://www.upwork.com/freelancers/alexisprisma';" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
@@ -326,7 +312,7 @@ Check out our projects.</h3>
         <img src="./img/team3.jpg" alt="Mike" style="width:100%">
         <div class="w3-container">
           <h3 id="team-sub-subtitle">Daniel Leo</h3>
-          <p class="w3-opacity">CTO</p>
+          <p class="w3-opacity">Systems Engineer</p>
           <p>A mastermind of web-dev.</p>
           <p><button onclick="location.href='https://www.upwork.com/freelancers/~01f7da6c6326c70feb';" class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
@@ -400,30 +386,12 @@ Check out our projects.</h3>
       <hr class="solid">
   </div>
     <p>contact@prismasys.site</p>
-  <p>Prisma Systems 2021. All Rights Reserved.<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+  <p>Prisma Systems 2022. All Rights Reserved.<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
 
   </div></footer>
 
 <script>
-// Facebook Messenger Plooyeen
-var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "1206154359559157");
-      chatbox.setAttribute("attribution", "biz_inbox");
 
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v11.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
